@@ -369,6 +369,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2515896139134104517, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1017,6 +1025,32 @@ Transform:
   m_Father: {fileID: 244743490}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &993347903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811907471260634365, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
+  m_PrefabInstance: {fileID: 1804334808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &993347904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993347903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110ce372f1653cb4aa32de6d0ac8acf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPoint: {fileID: 1500484989}
+  bulletPrefab: {fileID: 4727575491990191039, guid: 0b0fc509f55fa1d4f8962351cc898f74, type: 3}
+  bulletSpeed: 10
+  Period: 1
+--- !u!4 &993347907 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4588408303114360391, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
+  m_PrefabInstance: {fileID: 1804334808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1067679169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1362,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
+--- !u!1 &1500484988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500484989}
+  m_Layer: 0
+  m_Name: BulletSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1500484989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500484988}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
+  m_LocalPosition: {x: 4.0745363e-10, y: -0.002011865, z: 0.00068012497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 993347907}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -270, y: -90, z: 0}
 --- !u!1 &1644506252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1505,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
+--- !u!1 &1744942061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811907471260634365, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
+  m_PrefabInstance: {fileID: 1744942060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1744942063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744942061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110ce372f1653cb4aa32de6d0ac8acf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  bulletSpeed: 10
+  Period: 0.1
 --- !u!1 &1763659737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,11 +1725,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4588408303114360391, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.463314
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4588408303114360391, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.49999887
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4588408303114360391, guid: 852fd6a4c3c22ba469f341e05ef7ddba, type: 3}
       propertyPath: m_LocalPosition.z

@@ -18,8 +18,6 @@ public class GameManager : MonoBehaviour
             gameEnded = true;
             Debug.Log("Game Over");
             Invoke("Restart", 1f);
-
-
         }
     }
     void Restart()

@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa1af999e648a94199a929c07dbf69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: 
 --- !u!1001 &215436847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -312,7 +311,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
       propertyPath: m_LocalScale.x
@@ -549,7 +548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1644506255}
-  NextLevel: Level03
 --- !u!65 &539641397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1844,7 +1842,7 @@ Transform:
   m_LocalScale: {x: 15, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1997332778
 GameObject:

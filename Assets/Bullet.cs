@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+        Destroy(gameObject, 2f);
     }
 
     void onCollisionEnter(Collision collision)

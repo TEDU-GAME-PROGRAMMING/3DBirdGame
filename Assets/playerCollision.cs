@@ -4,6 +4,7 @@ public class playerCollision : MonoBehaviour
 {
     public playerMovement movement;
 
+
     void OnCollisionEnter(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "Obstacle")
@@ -12,5 +13,6 @@ public class playerCollision : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
 
 }

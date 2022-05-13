@@ -4,12 +4,19 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Transform player;
-    public Text scoreText;
+
+    Text scoreText;
+    public static int coinAmount;
+
     // Update is called once per frame
+    void Start()
+    {
+        scoreText = GetComponent<Text>();
+    }
     void Update()
     {
-        scoreText.text = player.position.z.ToString("0");
+        scoreText.text = coinAmount.ToString();
     }
+
 }
 

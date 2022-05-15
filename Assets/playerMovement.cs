@@ -6,6 +6,7 @@ public class playerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 2000f;
     public float sidewayForce = 500f;
+    public GameObject RestartButton;
 
     void FixedUpdate()
     {
@@ -22,7 +23,7 @@ public class playerMovement : MonoBehaviour
         }
         if (rb.position.y < 1f)
         {
-            FindObjectOfType<GameManager>().EndGame();
+            RestartButton.SetActive(true);
         }
 
     }

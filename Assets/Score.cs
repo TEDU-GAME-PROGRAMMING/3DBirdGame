@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
+        coinAmount = 0;
         scoreText = GetComponent<Text>();
     }
     void Update()

@@ -18,7 +18,6 @@ public class Coin : MonoBehaviour
         {
             Score.coinAmount += 1;
             Destroy(gameObject);
-
         }
     }
 

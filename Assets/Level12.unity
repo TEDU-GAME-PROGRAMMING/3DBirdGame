@@ -363,6 +363,7 @@ MonoBehaviour:
   rb: {fileID: 244743488}
   forwardForce: 3500
   sidewayForce: 50
+  RestartButton: {fileID: 0}
 --- !u!4 &244743490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61354f0bc2f0d0343aa72e890322eefa, type: 3}
@@ -381,6 +382,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 244743489}
+  RestartButton: {fileID: 0}
+--- !u!114 &244743492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244743486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dfe23c9874c058488b19510bd039068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinManager: {fileID: 11400000, guid: d8e44a023d95b0b4184291557de83b44, type: 2}
 --- !u!1 &376673111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,8 +1106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e71dfcf8bfc80b4a9fd0950e555a5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 244743490}
-  scoreText: {fileID: 1462814186}
 --- !u!1 &1644506252
 GameObject:
   m_ObjectHideFlags: 0

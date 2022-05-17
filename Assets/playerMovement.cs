@@ -8,6 +8,7 @@ public class playerMovement : MonoBehaviour
     public float sidewayForce = 500f;
     public GameObject RestartButton;
 
+
     void FixedUpdate()
     {
         //forward force

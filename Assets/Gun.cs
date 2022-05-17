@@ -8,13 +8,15 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
 
-    private float nextAction = 0f;
+    private float nextAction = 0f,time;
     public float Period = 0.1f;
-
-
+    private void Start() {
+        
+    }
     void Update()
     {
-        if (Time.time > nextAction)
+        time=Time.timeSinceLevelLoad;
+        if (time> nextAction)
         {
             nextAction += Period;
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);

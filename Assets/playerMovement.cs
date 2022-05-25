@@ -6,7 +6,10 @@ public class playerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 2000f;
     public float sidewayForce = 500f;
+    public float jumpForce = 5f;
+    public bool isOnGround = true;
     public GameObject RestartButton;
+    
 
 
     void FixedUpdate()
@@ -22,10 +25,21 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            rb.AddForce(Vector3.up*jumpForce,ForceMode.Impulse);
+            isOnGround=false;
+        }
+
         if (rb.position.y < 1f)
         {
             RestartButton.SetActive(true);
         }
 
     }
+    private void OnCollisionEnter(Collision collision){
+            if(collision.gameObject.CompareTag("zemin")){
+                isOnGround = true;
+            }
+        }
 }

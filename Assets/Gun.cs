@@ -10,9 +10,6 @@ public class Gun : MonoBehaviour
 
     private float nextAction = 0f,time;
     public float Period = 0.1f;
-    private void Start() {
-        
-    }
     void Update()
     {
         time=Time.timeSinceLevelLoad;

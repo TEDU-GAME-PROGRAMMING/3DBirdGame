@@ -37,6 +37,18 @@ public class playerMovement : MonoBehaviour
         }
 
     }
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            rb.AddForce(Vector3.up*jumpForce,ForceMode.Impulse);
+            isOnGround=false;
+        }
+
+        if (rb.position.y < 1f)
+        {
+            RestartButton.SetActive(true);
+        }
+    }
     private void OnCollisionEnter(Collision collision){
             if(collision.gameObject.CompareTag("zemin")){
                 isOnGround = true;

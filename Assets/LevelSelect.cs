@@ -10,9 +10,9 @@ public class LevelSelect : MonoBehaviour
         foreach (Button b in LevelButtons)
             b.interactable = false;
 
-        int reachedLevel = PlayerPrefs.GetInt("reachedLevel", 1);
+        int reachedLevel = PlayerPrefs.GetInt("reachedLevel", 0);
 
-        for (int i = 0; i < reachedLevel; i++)
+        for (int i = 0; i <= reachedLevel; i++)
             LevelButtons[i].interactable = true;
     }
 

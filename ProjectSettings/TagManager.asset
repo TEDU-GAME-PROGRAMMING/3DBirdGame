@@ -7,6 +7,10 @@ TagManager:
   - Obstacle
   - Coinler
   - zemin
+  - slow
+  - fast
+  - disableenemy
+  - random
   layers:
   - Default
   - TransparentFX

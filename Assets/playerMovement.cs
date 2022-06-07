@@ -4,7 +4,7 @@ public class playerMovement : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public float forwardForce = 2000f;
+    public float forwardForce;
     public float sidewayForce = 500f;
     public float jumpForce = 5f;
     public bool isOnGround = true;

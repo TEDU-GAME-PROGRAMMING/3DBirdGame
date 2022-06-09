@@ -12,7 +12,8 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+        rb=this.gameObject.GetComponent<Rigidbody>();
+        rb.AddForce(this.gameObject.transform.forward*20,ForceMode.VelocityChange);
         Destroy(gameObject, 2f);
     }
 
